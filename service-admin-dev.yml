@@ -4,6 +4,14 @@ server:
 debug: true
 
 spring:
+  http:
+    encoding:
+      charset: utf-8
+  messages:
+    basename: i18n/core/messages
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: true
   datasource:
     url: jdbc:postgresql://127.0.0.1:5432/supermarket
     username: supermarket
@@ -21,9 +29,11 @@ spring:
     host: 127.0.0.1
     port: 6379
     database: 0
-  jackson:
-    serialization:
-      WRITE_DATES_AS_TIMESTAMPS: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
