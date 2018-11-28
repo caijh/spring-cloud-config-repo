@@ -49,9 +49,12 @@ swagger:
   base-package: com.coding.serviceadmin.controller
 
 management:
+  security:
+    enabled: false
   endpoint:
     shutdown:
       enabled: true
+
 sample:
   string:
     property: Client App
