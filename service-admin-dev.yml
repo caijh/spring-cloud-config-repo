@@ -49,8 +49,10 @@ swagger:
   base-package: com.coding.serviceadmin.controller
 
 management:
-  security:
-    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: *
   endpoint:
     shutdown:
       enabled: true
