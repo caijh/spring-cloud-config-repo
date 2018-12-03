@@ -12,23 +12,26 @@ spring:
   jackson:
     serialization:
       WRITE_DATES_AS_TIMESTAMPS: true
-  datasource:
-    base:
+  base:
+    datasource:
       url: jdbc:postgresql://127.0.0.1:5432/supermarket-base
       username: supermarket
       password: supermarket
       driver-class-name: org.postgresql.Driver
-    product:
+  product:
+    datasource:
       url: jdbc:postgresql://127.0.0.1:5432/supermarket-product
       username: supermarket
       password: supermarket
       driver-class-name: org.postgresql.Driver
-    order:
+  order:
+    datasource:
       url: jdbc:postgresql://127.0.0.1:5432/supermarket-order
       username: supermarket
       password: supermarket
       driver-class-name: org.postgresql.Driver
-    coupon:
+  coupon:
+    datasource:
       url: jdbc:postgresql://127.0.0.1:5432/supermarket-coupon
       username: supermarket
       password: supermarket
@@ -72,3 +75,10 @@ management:
   endpoint:
     shutdown:
       enabled: true
+
+
+sample:
+  string:
+    property: Client App
+  int:
+    property: 2
