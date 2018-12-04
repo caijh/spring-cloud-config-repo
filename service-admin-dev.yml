@@ -34,6 +34,7 @@ spring:
       password: supermarket
       driver-class-name: org.postgresql.Driver
   jpa:
+    generate-ddl: true
     hibernate:
       ddl-auto: update
       naming:
