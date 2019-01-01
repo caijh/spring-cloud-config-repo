@@ -31,7 +31,7 @@ spring:
           min-pool-size: 1
           max-life-time: 20000
           borrow-connection-timeout: 10000
-          xa-data-source-class-name: org.postgresql.Driver
+          xa-data-source-class-name: org.postgresql.xa.PGXADataSource
           xa-properties:
             user: supermarket
             password: supermarket
@@ -42,7 +42,7 @@ spring:
           min-pool-size: 1
           max-life-time: 20000
           borrow-connection-timeout: 10000
-          xa-data-source-class-name: org.postgresql.Driver
+          xa-data-source-class-name: org.postgresql.xa.PGXADataSource
           xa-properties:
             user: supermarket
             password: supermarket
@@ -53,7 +53,7 @@ spring:
           min-pool-size: 1
           max-life-time: 20000
           borrow-connection-timeout: 10000
-          xa-data-source-class-name: org.postgresql.Driver
+          xa-data-source-class-name: org.postgresql.xa.PGXADataSource
           xa-properties:
             user: supermarket
             password: supermarket
@@ -64,7 +64,7 @@ spring:
           min-pool-size: 1
           max-life-time: 20000
           borrow-connection-timeout: 10000
-          xa-data-source-class-name: org.postgresql.Driver
+          xa-data-source-class-name: org.postgresql.xa.PGXADataSource
           xa-properties:
             user: supermarket
             password: supermarket
